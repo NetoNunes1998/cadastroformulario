@@ -13,23 +13,6 @@ conexao = mysql.connector.connect(
 )
 cursor = conexao.cursor()
 
-nome = "nome"
-whatsapp = "nome"
-endereco = "resposta0"
-pergunta1 = "resposta1"
-pergunta2 = "resposta2"
-pergunta3 = "resposta3"
-pergunta4 = "resposta4"
-especifique4 = "resposta4"
-pergunta5 = "resposta5"
-pergunta6 = "resposta6"
-especifique6 = "resposta6"
-pergunta7 = "resposta7"
-pergunta8 = "resposta8"
-especifique8 = "resposta8"
-pergunta9 = "resposta9"
-autorizacao = "resposta8"
-data_cadastro = "data"
 comando = f'INSERT INTO cadastros (nome, whatsapp, endereco, pergunta1, pergunta2, pergunta3, pergunta4, especifique4, pergunta5, pergunta6, especifique6, pergunta7, pergunta8, especifique8, pergunta9, autorizacao, data_cadastro) VALUES ("{nome}", "{whatsapp}", "{endereco}","{pergunta1}", "{pergunta2}", "{pergunta3}", "{pergunta4}", "{especifique4}", "{pergunta5}", "{pergunta6}", "{especifique6}", "{pergunta7}", "{pergunta8}", "{especifique8}", "{pergunta9}", "{autorizacao}", "{data_cadastro}")'
 cursor.execute(comando)
 conexao.commit()
